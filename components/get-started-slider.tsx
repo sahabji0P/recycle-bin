@@ -31,7 +31,7 @@ export function ImagesSliderDemo() {
                     Recycle Bin <br /> DUMP & RETIVE THE WASTE
                 </motion.p>
                 <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-                    <Link href={"/createProfile"}><span>Get Started →</span></Link>
+                    <Link href={"/dashboard"}><span>Get Started →</span></Link>
                     <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                 </button>
             </motion.div>
