@@ -1,4 +1,3 @@
-import Image from "next/image";
 // import ListProducts from "../components/ListProducts";
 import axios from "axios";
 
