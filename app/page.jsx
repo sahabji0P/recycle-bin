@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ListProducts from "../components/ListProducts";
+// import ListProducts from "../components/ListProducts";
 import axios from "axios";
 
 
@@ -13,7 +13,8 @@ export default async function Home() {
     const productsData = await getProducts();
 
   return (
-    <ListProducts data={productsData} />
+    // <ListProducts data={productsData} />
+    <div>Hello World</div>
    
   );
 }
