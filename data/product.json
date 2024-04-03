@@ -1,0 +1,8 @@
+{
+    "name" : "Car Scrap",
+    "description" : "A 3 year old car Scrap containing old bearing and other car engine parts",
+    "price" : 400,
+    "seller": "Nikhil",
+    "stock" : 500,
+    "category": "Car Scrap"
+}
