@@ -1,4 +1,6 @@
-// import ListProducts from "../components/ListProducts";
+import Image from "next/image";
+import React from "react";
+import ListProducts from "@/components//products/ListProducts";
 import axios from "axios";
 
 
@@ -7,13 +9,16 @@ const getProducts = async () => {
     return data
 }
 
-export default async function Home() {
+const Home = async() => {
 
     const productsData = await getProducts();
 
   return (
-    // <ListProducts data={productsData} />
-    <div>Hello World</div>
+    <ListProducts data={productsData} />
+
    
   );
 }
+
+export default Home;
+

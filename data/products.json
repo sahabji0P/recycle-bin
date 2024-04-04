@@ -1,0 +1,52 @@
+[
+    {
+    "name" : "Car Scrap",
+    "description" : "A 3 year old car Scrap containing old bearing and other car engine parts",
+    "price" : 400,
+    "seller": "Nikhil",
+    "stock" : 500,
+    "category": "Car Scrap -- ISHANG",
+    "images" : [
+        {
+            "public_id" : "recycle-bin/products/c953eeeb2e4119a54bfe0f86eb1c22d3",
+            "url" : "https://res.cloudinary.com/dwfgb2l8f/image/upload/v1712150609/products/photo-1710000397901-5d28bb86f1c6_ukt8ui.jpg"
+        }
+    ],
+    "reviews" : [],
+    "rating" : 4.5
+},
+
+{
+    "name" : "Paper Waste",
+    "description" : "Used paper waste from a school containing old notes and books",
+    "price" : 20,
+    "seller": "Nikhil",
+    "stock" : 5,
+    "category": "Paper",
+    "images" : [
+        {
+            "public_id" : "recycle-bin/products/141340909cee0db9b44e293bef5632d9",
+            "url" : "https://res.cloudinary.com/dwfgb2l8f/image/upload/v1712150667/products/photo-1711912463931-f1d59e04a132_egu9yc.jpg"
+        }
+    ],
+    "reviews" : [],
+    "rating" : 4.1
+},
+
+{
+    "name" : "Plastic Waste",
+    "description" : "Plastic waste from a factory containing old plastic bottles and containers",
+    "price" : 50,
+    "seller": "Nikhil",
+    "stock" : 10,
+    "category": "Plastic",
+    "images" : [
+        {
+            "public_id" : "recycle-bin/products/ff9be4428c1d3749df47da1866435ca",
+            "url" : "https://res.cloudinary.com/dwfgb2l8f/image/upload/v1712150576/products/photo-1710189605149-6cb6b81e5e9e_k1sut2.jpg"
+        }
+    ],
+    "reviews" : [],
+    "rating" : 4.3
+}
+]
