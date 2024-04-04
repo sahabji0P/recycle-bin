@@ -33,6 +33,7 @@ export const getProducts = async (req, res, next) => {
         filteredProductsCount,
         products,
     });
+
 };
 
 export const getProduct = async (req, res, next) => {
