@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="bg-white py-2 border-b">
       <div className="container max-w-screen-xl mx-auto px-4">
-        <div className="flex flex-wrap items-center">
+        <div className="flex flex-wrap bg-white items-center">
           <div className="flex-shrink-0 mr-5">
             <a href="/">
               <Image
