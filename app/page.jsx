@@ -1,24 +1,28 @@
-import Image from "next/image";
 import React from "react";
-import ListProducts from "@/components//products/ListProducts";
 import axios from "axios";
+import ListProducts from "@/components/products/ListProducts";
+import queryString from "query-string";
 
+const getProducts = async (searchParams) => {
+  const urlParams = {
+    keyword: searchParams.keyword,
+    page: searchParams.page,
+  };
 
-const getProducts = async () => {
-    const {data} = await axios.get(`${process.env.API_URL}/api/products`);
-    return data
-}
+  const searchQuery = queryString.stringify(urlParams);
 
-const Home = async() => {
+  console.log("searchQuery", searchQuery);
 
-    const productsData = await getProducts();
-
-  return (
-    <ListProducts data={productsData} />
-
-   
+  const { data } = await axios.get(
+    `${process.env.API_URL}/api/products?${searchQuery}`
   );
-}
+  return data;
+};
 
-export default Home;
+const HomePage = async ({ searchParams }) => {
+  const productsData = await getProducts(searchParams);
 
+  return <ListProducts data={productsData} />;
+};
+
+export default HomePage;
