@@ -54,7 +54,7 @@ const ProductItem = ({ product }) => {
               <div className="ratings">
                 <div className="my-1">
                   <StarRatings
-                    rating={product?.ratings}
+                    rating={product?.rating}
                     starRatedColor="#ffb829"
                     numberOfStars={5}
                     starDimension="18px"
@@ -74,7 +74,7 @@ const ProductItem = ({ product }) => {
         <div className="md:w-1/4 border-t lg:border-t-0 lg:border-l border-gray-200">
           <div className="p-5">
             <span className="text-xl font-semibold text-black">
-              ${product?.price}
+              ₹{product?.price}
             </span>
 
             <p className="text-green-500">Free Shipping</p>

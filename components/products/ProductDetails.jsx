@@ -85,7 +85,7 @@ const ProductDetails = ({ product }) => {
                     name="rating"
                   />
                 </div>
-                <span className="text-yellow-500">{product?.ratings}</span>
+                <span className="text-yellow-500">{product?.rating}</span>
 
                 <svg
                   width="6px"
@@ -99,7 +99,7 @@ const ProductDetails = ({ product }) => {
                 <span className="text-green-500">Verified</span>
               </div>
 
-              <p className="mb-4 font-semibold text-xl">${product?.price}</p>
+              <p className="mb-4 font-semibold text-xl">₹{product?.price}</p>
 
               <p className="mb-4 text-gray-500">{product?.description}</p>
 
