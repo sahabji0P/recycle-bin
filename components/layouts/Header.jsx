@@ -1,9 +1,15 @@
+'use client';
 import React from "react";
 import Link from "next/link";
 import Search from "./Search";
 import Image from "next/image";
+import { useContext } from "react";
+import CartContext from "@/context/CartContext";  
 
 const Header = () => {
+  const {cart} = useContext(CartContext);
+  const cartItems = cart?.cartItems;
+
   return (
     <header className="bg-white py-2 border-b">
       <div className="container max-w-screen-xl mx-auto px-4">
@@ -28,7 +34,7 @@ const Header = () => {
             >
               <i className="text-gray-400 w-5 fa fa-shopping-cart"></i>
               <span className="hidden lg:inline ml-1">
-                Cart (<b>0</b>)
+                Cart (<b>{cartItems?.length || 0}</b>)
               </span>
             </Link>
             <Link
@@ -43,7 +49,7 @@ const Header = () => {
                 <img className="w-10 h-10 rounded-full" src={"/images/default.png"} />
                 <div className="space-y-1 font-medium">
                   <p>
-                    Ghulam
+                    exxample
                     <time className="block text-sm text-gray-500 dark:text-gray-400">
                       test@gmail.com
                     </time>
