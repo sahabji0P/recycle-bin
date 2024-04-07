@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
-    env:{
-        NEXTAUTH_SECRET: "recycle-bin",
+    
+    env: {
         API_URL: "http://localhost:3000",
-        DB_URI: "mongodb://localhost:27017/recycle-bin"
+        DB_URI: "mongodb://localhost:27017/recycle-bin",
+        NEXTAUTH_SECRET: "recycle-bin",
     },
     images: {
-        domains: ["res.cloudinary.com", "asset.cloudinary.com"]
+        domains: ["res.cloudinary.com", "asset.cloudinary.com"],
     },
 };
 

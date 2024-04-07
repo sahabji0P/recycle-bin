@@ -1,5 +1,5 @@
 import Product from "../models/product";
-import APIFilteres from "../utils/APIFilters";
+import APIFilters from "../utils/APIFilters";
 
 export const newProduct = async (req, res, next) => {
     const product = await Product.create(req.body);
@@ -9,12 +9,10 @@ export const newProduct = async (req, res, next) => {
 };
 
 export const getProducts = async (req, res, next) => {
-
     const resPerPage = 3;
-    const productCount = await Product.countDocuments();
+    const productsCount = await Product.countDocuments();
 
-
-    const apiFilters = new APIFilteres(Product.find(), req.query)
+    const apiFilters = new APIFilters(Product.find(), req.query)
     .search()
     .filter();
 
@@ -28,12 +26,11 @@ export const getProducts = async (req, res, next) => {
         
 
     res.status(200).json({
-        productCount,
+        productsCount,
         resPerPage,
         filteredProductsCount,
         products,
     });
-
 };
 
 export const getProduct = async (req, res, next) => {

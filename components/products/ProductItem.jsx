@@ -54,7 +54,7 @@ const ProductItem = ({ product }) => {
               <div className="ratings">
                 <div className="my-1">
                   <StarRatings
-                    rating={product?.rating}
+                    rating={product?.ratings}
                     starRatedColor="#ffb829"
                     numberOfStars={5}
                     starDimension="18px"
